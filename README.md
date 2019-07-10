@@ -1,6 +1,6 @@
 # Welcome to Our Streams!
 
-Everyday we stream! Check out what we've been streaming below!
+Everyday we stream on [Twitch](https://www.twitch.tv/sguthals)! Check out what we've been streaming below!
 
 ## 2019
 ### July
