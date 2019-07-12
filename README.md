@@ -4,6 +4,18 @@ Everyday we stream on [Twitch](https://www.twitch.tv/sguthals)! Check out what w
 
 ## 2019
 ### July
+11: Moving on to our Rope Jumping Dinosaur! We switched over to Arduino today to build a simple prototype of our Rope Jumping Dinosaur!
+Check it out [here](/2019/july/11/)
+
+<img width="1969" alt="Screen Shot 2019-07-11 at 5 52 07 PM" src="https://user-images.githubusercontent.com/1314285/61094585-ad8c7a80-a404-11e9-9e01-f8b3d07678bf.png">
+
+
+10: Today we continued making the simple menu for our games and it actually worked!
+Check it out [here](/2019/july/10/)
+
+<img width="1122" alt="Screen Shot 2019-07-11 at 5 53 08 PM" src="https://user-images.githubusercontent.com/1314285/61094601-c1d07780-a404-11e9-85ec-e2ea1fd6ebb7.png">
+
+
 9: Today we extended the Pizza Chasing tutorial and made a simple menu for our game so we could have more than one game at a time. 
 Check it out [here](/2019/july/9/)!  
 
