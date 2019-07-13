@@ -9,6 +9,11 @@ void setup()
 
 void loop()
 {
+  jumpRope();
+}
+
+void jumpRope()
+{
   digitalWrite(A0, HIGH);
   delay(1000); // Wait for 1000 millisecond(s)
   digitalWrite(A0, LOW);
@@ -40,5 +45,5 @@ void loop()
   digitalWrite(A1, HIGH);
   delay(1000); // Wait for 1000 millisecond(s)
   digitalWrite(A1, LOW);
-  delay(1000); // Wait for 1000 millisecond(s)
+  delay(1000); // Wait for 1000 millisecond(s) 
 }
