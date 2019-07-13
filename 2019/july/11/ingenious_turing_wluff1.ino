@@ -17,6 +17,7 @@ void loop()
   
 void jumpRope()
 {
+  //Go down in front of the dinosaur
   digitalWrite(A0, HIGH);
   delay(1000); // Wait for 1000 millisecond(s)
   digitalWrite(A0, LOW);
@@ -42,6 +43,8 @@ void jumpRope()
   digitalWrite(A4, HIGH);
   delay(1000); // Wait for 1000 millisecond(s)
   digitalWrite(A4, LOW);
+  
+  // Go up behind the dinosaur, not lighting up the middle lights
   delay(1000); // Wait for 1000 millisecond(s)
   digitalWrite(A3, HIGH);
   delay(1000); // Wait for 1000 millisecond(s)
