@@ -17,4 +17,4 @@ world I was using in Minecraft.
 | TreeHouse | -1261, 75, 372 | Trees | 
 | Coral Reef | -1829, 54, 400 | Coral | 
 | Cave | -2032, 72, 726 | Cave | 
-| Mountain (starting point) | 13113, 99, 562 | Mountain |
+| Mountain (starting point) | -1313, 99, 562 | Mountain |
