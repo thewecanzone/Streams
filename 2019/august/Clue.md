@@ -6,15 +6,35 @@ On August 13th I started making Clue in Minecraft!
 To make Clue, we needed a gameboard. For that I made 9 square rooms around a 
 world I was using in Minecraft.
 
-| Room Name | Location | Command | 
-| --------- | -------- | ------- |
-| Canyon | -1322,25,179 | Canyon |
-| Water | -1313, 99, 526 | Water |
-| Hill | -1208, 64, 698 | Hill | 
-| Mud | -954, 54, 1060 | Mud  |
-| Swamp | -1477, 57, 2211 | Swamp |
-| Sky | -1303, 152, 650 | Sky |
-| TreeHouse | -1261, 75, 372 | Trees | 
-| Coral Reef | -1829, 54, 400 | Coral | 
-| Cave | -2032, 72, 726 | Cave | 
-| Mountain (starting point) | 13113, 99, 562 | Mountain |
+| Room ID | Room Name | Location | Command | 
+| ------- | --------- | -------- | ------- |
+| 0 | Canyon | -1322,25,179 | Canyon |
+| 1 | Water | -1313, 99, 526 | Water |
+| 2 | Hill | -1208, 64, 698 | Hill | 
+| 3 | Mud | -954, 54, 1060 | Mud  |
+| 4 | Swamp | -1477, 57, 2211 | Swamp |
+| 5 | Sky | -1303, 152, 650 | Sky |
+| 6 | TreeHouse | -1261, 75, 372 | Trees | 
+| 7 | Coral Reef | -1829, 54, 400 | Coral | 
+| 8 | Cave | -2032, 72, 726 | Cave | 
+| 9 | Mountain (starting point) | -1313, 99, 562 | Mountain |
+
+### Setup Code
+If you want to build a similar board game to the one I built, you can use this setup code: [https://makecode.com/_icx4dMCs96H0](https://makecode.com/_icx4dMCs96H0)
+
+To get started, make sure you run the code in the Code Simulator. 
+1. **Create the arrays.** To do that, type `setup` in the chat.
+2. **Find your starting point location.** Identify a mountain that you want to be your starting point. 
+3. **Identify the teleportation location.** Stan where you want your players to teleport to on top of the mountain. Then open the code and modify the x, y, and z position arrays with the correct coordinates. (Highly recommended that you write them on paper too as a backup.)
+4. **Re-run and setup the code.** Each time you modify the code, re-run it (pressing the green start button) and type `setup` in the chat.
+5. **Find your first room location.** Identify where you want to build your first room. If you want to have the same type of rooms as I have, then make sure you know which number (room) it corresponds to (e.g. to build the Coral Reef room, the room id and array position would be 7 and you will be building with blue coral).
+6. **Build the room.** In chat, type `build #`, where # is replaced with 0-8 depending on which room you're building. 
+7. **Identify the teleportation location.** Go above the room and type `teleport -1` in the chat to get inside the room. Add some torches so that you can see, and find the place within the room where you want your players to teleport to. Then open the code and modify the x, y, and z position arrays with the correct coordinates.
+8. **Re-run and setup the code.** Each time you modify the code, re-run it (pressing the green start button) and type `setup` in the chat.
+9. **TEST.** Make sure you test your teleportation code to make sure it teleports you to the correct location. You can use `teleport 10` to go above the room to gain perspective on where you are and `teleport -1` to get back into the room if you need.
+10. **Repeat steps 5-9 for each room.** Continue adding all of the rooms to your world and noting their coordinates in the code. 
+
+### Important Commands
+`setup` - this command will initiliaze the arrays that hold each room, block type, and coordinates.  
+`teleport #` - this command will teleport you to the location of the room number that is associated with the number you put in for #.  
+`build #` - this command will build a 10x10 cube with a specific block type depending on which room you're making. 
