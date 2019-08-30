@@ -66,3 +66,7 @@ In this version, we're going to have three stages, where players are going to ha
 ### Version 2: Find Clues to Find the Prize (RP1)
 In this version, we're going to have clues all around the Minecraft world that will give players the coordinates to each room and the necessary tool to find the prize. Players will run around the world, finding clues, making tools, and eventually finding the rooms and trying to find the prize. 
 - Some rooms could restrict the number of players in it at a time
+- Maybe we have a certain number of blocks required in your inventory to be able to collect the prize
+
+### Resources
+[Breaking Blocks](https://minecraft.gamepedia.com/Breaking)
