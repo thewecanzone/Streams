@@ -38,3 +38,31 @@ To get started, make sure you run the code in the Code Simulator.
 `setup` - this command will initiliaze the arrays that hold each room, block type, and coordinates.  
 `teleport #` - this command will teleport you to the location of the room number that is associated with the number you put in for #.  
 `build #` - this command will build a 10x10 cube with a specific block type depending on which room you're making. 
+
+## Game Play Notes
+### Ideas
+- Only allow one person in a room at a time. 
+  - Keep track of where every one is
+  - Tricky: Someone could call the command at the same time
+- Certain block types that require certain tools
+  - Something is hidden within the blocks that you want to collect
+  - Hidden Objects: Tools, random things, prizes, final prize
+- Clues in the blocks maybe?
+  - Reflect the current events we could update signs
+  - Certain signs have certain types of clues?
+  - The sign in the water room will give a clue to the character?
+- Play in the game AND in person
+- Do we want to limit players to only being in the rooms?
+  - Could be fun to allow players to go anywhere (in survival) and then there would be different strategies for winning 
+- Timer?
+- Assassin?
+
+### Version 1: Multiple Stages
+In this version, we're going to have three stages, where players are going to have a chance to get the master prize, but they will lose *if* the other players determine who they are, what room, and what the prize was. The three stages would be:
+  - **Finding the prizes stage**: Make your tools, explore the rooms, collect prizes. When someone collects the master prize, we move to the clue stage.
+  - **Finding clues stage**: Explore rooms, you can't collect/create more tools?, Read clues on signs etc?
+  - **Guessing stage**: In person/In Minecraft try to figure out who got the prize, what room it was in, and what tool they were using
+
+### Version 2: Find Clues to Find the Prize (RP1)
+In this version, we're going to have clues all around the Minecraft world that will give players the coordinates to each room and the necessary tool to find the prize. Players will run around the world, finding clues, making tools, and eventually finding the rooms and trying to find the prize. 
+- Some rooms could restrict the number of players in it at a time
