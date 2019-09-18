@@ -9,7 +9,7 @@ world I was using in Minecraft.
 | Room ID | Room Name | Location | Command | 
 | ------- | --------- | -------- | ------- |
 | 0 | Canyon | -1322,25,179 | Canyon |
-| 1 | Water | -2024, 52, 362 | Water |
+| 1 | Water | -2021, 52, 367 | Water |
 | 2 | Hill | -1208, 64, 698 | Hill | 
 | 3 | Mud | -954, 54, 1060 | Mud  |
 | 4 | Swamp | -1477, 57, 2211 | Swamp |
@@ -86,7 +86,7 @@ Canyon.Location =
 ```
 
 ### Water
-Location: -1313, 99, 526
+Location: -2021, 52, 367 
 -1313 in binary: -10100100001
 99 in binary: 1100011
 526 in binary: 1000001110
