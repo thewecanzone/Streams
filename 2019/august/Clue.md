@@ -87,9 +87,9 @@ Canyon.Location =
 
 ### Water
 Location: -2021, 52, 367 
--1313 in binary: -10100100001
-99 in binary: 1100011
-526 in binary: 1000001110
+-2021 in binary: -11111100101
+52 in binary: 110100
+367 in binary: 101101111
 
 Sign would read:
 ```
