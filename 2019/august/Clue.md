@@ -70,3 +70,208 @@ In this version, we're going to have clues all around the Minecraft world that w
 
 ### Resources
 [Breaking Blocks](https://minecraft.gamepedia.com/Breaking)
+
+## Clues for Location
+### Canyon
+Location: -1322,25,179
+In ASCII: 67 97 110 121 111 110
+Added together: 616
+-706, 641, 795
+
+Sign would read:
+```
+Canyon.Location = 
+(-706, 641, 795) + Canyon.ASCII.Sum
+```
+
+### Water
+Location: -1313, 99, 526
+-1313 in binary: -10100100001
+99 in binary: 1100011
+526 in binary: 1000001110
+
+Sign would read:
+```
+Water.Location.Binary = 
+-10100100001, 1100011, 1000001110 
+```
+
+### Hill
+Location: -1208, 64, 698
+In ASCII: 72 105 108 108
+105 - 72 = 33
+108 - 105 = 3
+-1208, 64, 698
+- 333,- 3,- 33
+-1541, 61, 665
+
+-1208 - 33 = -1241
+64 - 3 = 61
+698 - 0 = 698
+
+Sign would read:
+```
+Hill.Location - Hill.ASCII.Difference =
+-1241, 61, 698
+```
+
+### Mud
+Location: -954, 54, 1060
+
+In ASCII: 77, 117, 100
+-954 + 77 = -877
+54 + 117 = 171
+1060 + 100 = 1160
+
+Sign would read:
+```
+Mud.Location + Mud.ASCII =
+-877, 171, 1160
+```
+
+### Swamp
+Location: -1477, 57, 2211
+Sum of Location: 791
+57 represents 9 in ASCII
+2211 in Binary: 100010100011
+
+Sign would read:
+```
+Swamp.Location.Sum = 791
+Swamp.Location.Y = 9.ASCII
+Swamp.Location.Z = 100010100011.Decimal
+```
+
+### Sky
+Location: -1303, 152, 650
+S in ASCII - 83
+k in ASCII - 107
+y in ASCII - 121
+
+Sign would read:
+```
+Sky.Location =
+(-1182, 259, 733) - Sky.Reverse.ASCII
+```
+
+### Treehouse
+Location: -1261, 75, 372
+e in ASCII - 101
+
+-1261 in Binary - -010011101101
+75 in Binary - 1001011
+372 in Binary - 101110100
+
+101101101 XOR  
+000011001
+101110100
+
+Sign should read:
+```
+Tree.Location.X = -1261
+Tree.Location.Y = 1001011
+Tree.Location.Z = (eee.ASCII XOR 000011001).Decimal
+```
+
+### Coral Reef
+Location: -1829, 54, 400
+
+Sign should read:
+```
+Coral.Location = -1829, 54, 400
+```
+
+### Cave
+Location: -2032, 72, 726
+
+D in ASCII - 68
+I in ASCII - 73
+G in ASCII - 71
+
+Sign should read:
+```
+Cave.Location = (-2099, -1, 655) + DIG.ASCII
+```
+
+## Clues for Prizes
+### The Six Block Types
+- Diamond Block
+  - Iron or Diamond Pickaxe
+- Obsidian Block
+  - Diamond Pickaxe
+- Iron Block
+  - Stone, Iron, or Diamond Pickaxe
+- Gold Block
+  - Iron or Diamond Pickaxe
+- Nether Brick Block
+  - Wooden, Stone, Iron, Diamond, Golden Pickaxe
+- Redstone Block
+  - Wooden, Stone, Iron, Diamond, Golden Pickaxe
+
+Randomly choose which room the blocks will be in. There will be a beacon for each room, next to the beacon there will be four different block types 
+
+### Canyon
+Sign should read:
+```
+Type "discover canyon" into the chat to determine which block to break to get the block type in the Canyon Room. 
+```
+Blocks:
+Wood, 
+
+### Water
+
+### Hill
+
+### Mud
+
+### Swamp
+
+### Sky
+In the sky room there are diamonds you have to break.
+
+S - 19th letter
+k - 11th letter
+y - 25th letter
+
+19 in binary is 10011
+11 in binary is 1011
+25 in binary is 11001
+
+Tool Needed:
+Iron or Diamond Pickaxe
+
+Sign would read:
+```
+Diamonds in the 
+10011 01011 11001
+```
+
+### Treehouse
+
+### Coral Reef
+
+### Cave
+
+
+# Game Goal:
+Game Play:
+Finding beacons in the world, you will find signs. Signs have clues for:
+- Locations of rooms
+- Block types in rooms
+
+***OR***
+Maybe there won't be clues for the block types in the rooms, instead you just go into each one and keep track of what you find. 
+
+First Place: Collect 5 of type X blocks
+X is random, each time the game is played, a different block type is chosen. If you correctly collect 5 of the right type of block, you will be awarded a sea pickle.
+
+Second Place: 
+Each player will have to guess which player found the sea pickle in which room by breaking which block type. As the first place winner, you will know when you were awarded the sea pickle. Your goal in this "clue" part of the game is to not give too much information away, but be honest. 
+
+Take turns, each person guesses, Clue-like, the player room, and block type. If they guess a player who broke a certain block type in a certain room, the player confirm or deny the sea pickle. If they do not have the sea pickle, folks will continue to guess taking turns. 
+
+**NOTE**: This second place isn't as "fun" as clue because there aren't as many unknowns, we may want to enhance that later, depending on how fast part 1 happens. 
+
+*Alternative*: First place person is no longer in play, there are other, random prizes along the way and folks have to guess where those were found?
+
+# Save for later
