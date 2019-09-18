@@ -9,7 +9,7 @@ world I was using in Minecraft.
 | Room ID | Room Name | Location | Command | 
 | ------- | --------- | -------- | ------- |
 | 0 | Canyon | -1322,25,179 | Canyon |
-| 1 | Water | -1313, 99, 526 | Water |
+| 1 | Water | -2024, 52, 362 | Water |
 | 2 | Hill | -1208, 64, 698 | Hill | 
 | 3 | Mud | -954, 54, 1060 | Mud  |
 | 4 | Swamp | -1477, 57, 2211 | Swamp |
@@ -70,6 +70,7 @@ In this version, we're going to have clues all around the Minecraft world that w
 
 ### Resources
 [Breaking Blocks](https://minecraft.gamepedia.com/Breaking)
+
 
 ## Clues for Location
 ### Canyon
@@ -275,3 +276,15 @@ Take turns, each person guesses, Clue-like, the player room, and block type. If 
 *Alternative*: First place person is no longer in play, there are other, random prizes along the way and folks have to guess where those were found?
 
 # Save for later
+
+[Block IDs](https://minecraft.gamepedia.com/Java_Edition_data_values/Pre-flattening/Block_IDs)
+
+## Code Documentation
+### Tracking Broken Gold Blocks
+![Screen Shot 2019-09-05 at 5 29 16 PM](https://user-images.githubusercontent.com/1314285/64392703-c7140200-d002-11e9-9e77-42f64b226b3e.png)
+When a gold block is broken (does not have to be collected, can be broken in Survival or Creative mode), the agent will add to the count of gold blocks in it's inventory.
+
+### Determining If All Blocks Needed Have Been Collected
+![Screen Shot 2019-09-05 at 5 32 03 PM](https://user-images.githubusercontent.com/1314285/64392816-55888380-d003-11e9-8e66-e39c402144f3.png)
+When a yellow concrete block is broken, if a user has broken exactly 5 gold blocks, they "win". "Winning" just has a chat message right now. 
+
